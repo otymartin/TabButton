@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		689230DB0FF351D8498068EE /* Pods_TabButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 213BDC1EA7DC56D35473F11E /* Pods_TabButton.framework */; };
 		A1E1A1CA20C4ADB1008BE76A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E1A1C920C4ADB1008BE76A /* AppDelegate.swift */; };
 		A1E1A1CC20C4ADB1008BE76A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E1A1CB20C4ADB1008BE76A /* ViewController.swift */; };
 		A1E1A1CF20C4ADB1008BE76A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1E1A1CD20C4ADB1008BE76A /* Main.storyboard */; };
 		A1E1A1D120C4ADB3008BE76A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1E1A1D020C4ADB3008BE76A /* Assets.xcassets */; };
 		A1E1A1D420C4ADB3008BE76A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1E1A1D220C4ADB3008BE76A /* LaunchScreen.storyboard */; };
+		A1E1A1DC20C4ADC2008BE76A /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E1A1DB20C4ADC2008BE76A /* TabButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12F41823EAC0F5066EACFD40 /* Pods-TabButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabButton.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TabButton/Pods-TabButton.debug.xcconfig"; sourceTree = "<group>"; };
+		213BDC1EA7DC56D35473F11E /* Pods_TabButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TabButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1E1A1C620C4ADB1008BE76A /* TabButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1E1A1C920C4ADB1008BE76A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1E1A1CB20C4ADB1008BE76A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		A1E1A1D020C4ADB3008BE76A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1E1A1D320C4ADB3008BE76A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1E1A1D520C4ADB3008BE76A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1E1A1DB20C4ADC2008BE76A /* TabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButton.swift; sourceTree = "<group>"; };
+		D74E0286E50BD226D55E6621 /* Pods-TabButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TabButton.release.xcconfig"; path = "Pods/Target Support Files/Pods-TabButton/Pods-TabButton.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				689230DB0FF351D8498068EE /* Pods_TabButton.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				A1E1A1C820C4ADB1008BE76A /* TabButton */,
 				A1E1A1C720C4ADB1008BE76A /* Products */,
+				B5A623FF8EAAC2859A2ACBF2 /* Pods */,
+				F8404119C76A888D0428F00E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +65,30 @@
 			children = (
 				A1E1A1C920C4ADB1008BE76A /* AppDelegate.swift */,
 				A1E1A1CB20C4ADB1008BE76A /* ViewController.swift */,
+				A1E1A1DB20C4ADC2008BE76A /* TabButton.swift */,
 				A1E1A1CD20C4ADB1008BE76A /* Main.storyboard */,
 				A1E1A1D020C4ADB3008BE76A /* Assets.xcassets */,
 				A1E1A1D220C4ADB3008BE76A /* LaunchScreen.storyboard */,
 				A1E1A1D520C4ADB3008BE76A /* Info.plist */,
 			);
 			path = TabButton;
+			sourceTree = "<group>";
+		};
+		B5A623FF8EAAC2859A2ACBF2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12F41823EAC0F5066EACFD40 /* Pods-TabButton.debug.xcconfig */,
+				D74E0286E50BD226D55E6621 /* Pods-TabButton.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F8404119C76A888D0428F00E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				213BDC1EA7DC56D35473F11E /* Pods_TabButton.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1E1A1D820C4ADB3008BE76A /* Build configuration list for PBXNativeTarget "TabButton" */;
 			buildPhases = (
+				CBD5699DFE8B42B867CBC2FB /* [CP] Check Pods Manifest.lock */,
 				A1E1A1C220C4ADB1008BE76A /* Sources */,
 				A1E1A1C320C4ADB1008BE76A /* Frameworks */,
 				A1E1A1C420C4ADB1008BE76A /* Resources */,
+				36F054C877406B249F972862 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,11 +159,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		36F054C877406B249F972862 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TabButton/Pods-TabButton-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Spring/Spring.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Spring.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TabButton/Pods-TabButton-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBD5699DFE8B42B867CBC2FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TabButton-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A1E1A1C220C4ADB1008BE76A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1E1A1DC20C4ADC2008BE76A /* TabButton.swift in Sources */,
 				A1E1A1CC20C4ADB1008BE76A /* ViewController.swift in Sources */,
 				A1E1A1CA20C4ADB1008BE76A /* AppDelegate.swift in Sources */,
 			);
@@ -278,15 +349,13 @@
 		};
 		A1E1A1D920C4ADB3008BE76A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12F41823EAC0F5066EACFD40 /* Pods-TabButton.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 26TV24DK6Z;
 				INFOPLIST_FILE = TabButton/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DopenessAcademy.TabButton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -296,15 +365,13 @@
 		};
 		A1E1A1DA20C4ADB3008BE76A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D74E0286E50BD226D55E6621 /* Pods-TabButton.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 26TV24DK6Z;
 				INFOPLIST_FILE = TabButton/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DopenessAcademy.TabButton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

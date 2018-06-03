@@ -1,0 +1,6 @@
+framework module Pods_TabButton {
+  umbrella header "Pods-TabButton-umbrella.h"
+
+  export *
+  module * { export * }
+}
