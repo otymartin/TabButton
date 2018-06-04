@@ -1,20 +1,32 @@
 PODS:
+  - AutoInsetter (1.2.3)
+  - Pageboy (2.5.1)
   - SnapKit (4.0.0)
   - Spring (1.0.5)
+  - Tabman (1.8.2):
+    - AutoInsetter (~> 1.2.0)
+    - Pageboy (~> 2.5.0)
 
 DEPENDENCIES:
   - SnapKit
   - Spring
+  - Tabman
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - AutoInsetter
+    - Pageboy
     - SnapKit
     - Spring
+    - Tabman
 
 SPEC CHECKSUMS:
+  AutoInsetter: 1a8f8ad5e7da8e993970b3809cfb8e8e330f4db1
+  Pageboy: f0295ea949f0b0123a1b486fd347ea892d0078e0
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   Spring: 17901566c8ecf3a1327902b940406c64512f9bb1
+  Tabman: 69ce69b44cec1ad693b82c24cdbdf0c45915668c
 
-PODFILE CHECKSUM: 740392dec969f4114161797314e120a4ea6d7723
+PODFILE CHECKSUM: ef82f5b3854cb514a79ac9dbda720361b0eef6d3
 
 COCOAPODS: 1.5.2

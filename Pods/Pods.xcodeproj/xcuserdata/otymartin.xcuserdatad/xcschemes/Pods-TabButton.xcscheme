@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "745221A1B29ED6ECFAC0BD4947883A1A"
+               BlueprintIdentifier = "9FBD8522E0CC74AECAA956EE97C61ED0"
                BuildableName = "Pods_TabButton.framework"
                BlueprintName = "Pods-TabButton"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "745221A1B29ED6ECFAC0BD4947883A1A"
+            BlueprintIdentifier = "9FBD8522E0CC74AECAA956EE97C61ED0"
             BuildableName = "Pods_TabButton.framework"
             BlueprintName = "Pods-TabButton"
             ReferencedContainer = "container:Pods.xcodeproj">

@@ -7,19 +7,27 @@
 //
 
 import UIKit
+import SnapKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, TabButtonDelegate {
+    
+    let button = TabButton()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        button.title = "People"
+        button.delegate = self
+        button.page = .one
+        button.secondTitle = NSAttributedString(string: "3💎", attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 17, weight: .heavy), NSAttributedStringKey.foregroundColor: UIColor.black])
+        button.backgroundColor = .clear
+        self.view.addSubview(self.button)
+        self.button.snp.makeConstraints { (make) in
+            make.center.equalTo(view.snp.center)
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func didTapTabButton(for page: TabPage) {
+        print(page)
     }
-
 
 }
-

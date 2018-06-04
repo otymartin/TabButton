@@ -9,18 +9,41 @@
 import UIKit
 import Spring
 
+public enum TabPage {
+    case one
+    case two
+    case three
+    case four
+    case five
+}
+
+public enum SecondTitlePosition {
+    case left
+    case right
+}
+
 public protocol TabButtonDelegate: class {
     
-    func didTabTabButton(for page: TabPage)
+    func didTapTabButton(for page: TabPage)
 }
 
 public class TabButton: SpringButton {
     
     public var page: TabPage?
     
-    public var tabTitle: String = "" {
+    private var position: SecondTitlePosition  = .left
+    
+    public var secondTitle: NSAttributedString? {
         didSet {
-            self.setTitle(self.tabTitle, for: .normal)
+            self.setSecondTitle()
+        }
+    }
+    
+    private var secondTitleLabel: UILabel?
+    
+    public var title: String = "" {
+        didSet {
+            self.setTitle(self.title, for: .normal)
         }
     }
     
@@ -45,15 +68,34 @@ public class TabButton: SpringButton {
 extension TabButton {
     
     fileprivate func configure() {
-        self.setTitleColor(.dark, for: .normal)
+        self.setTitleColor(.black, for: .normal)
         self.titleLabel?.font = UIFont.systemFont(ofSize: 17, weight: .heavy)
         self.addTarget(self, action: #selector(self.Tap), for: .touchUpInside)
     }
     
+    private func setSecondTitle() {
+        if self.secondTitleLabel == nil {
+            self.addSecondTitleLabel()
+        }
+        self.secondTitleLabel?.attributedText = self.secondTitle
+    }
+    
+    private func addSecondTitleLabel() {
+        self.secondTitleLabel = UILabel()
+        self.secondTitleLabel?.alpha = 0
+        self.secondTitleLabel?.backgroundColor = .yellow
+        guard let secondTitleLabel = self.secondTitleLabel else { return }
+        self.addSubview(secondTitleLabel)
+        secondTitleLabel.snp.makeConstraints { [weak self] (make) in
+            guard let view = self else { return }
+            make.trailing.equalTo(view.snp.trailing)
+            make.centerY.equalTo(view.snp.centerY)
+        }
+    }
+    
     @objc func Tap() {
         guard let page = self.page else { return }
-        self.popUpPopIn(scale: 0.95)
-        self.delegate?.didTabTabButton(for: page)
+        self.delegate?.didTapTabButton(for: page)
     }
     
     private var margin: CGFloat {
