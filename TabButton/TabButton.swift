@@ -8,6 +8,7 @@
 
 import UIKit
 import Spring
+import Pageboy
 
 public enum TabPage {
     case one
@@ -29,7 +30,7 @@ public protocol TabButtonDelegate: class {
 
 public class TabButton: SpringButton {
     
-    public var page: TabPage?
+    public var page: TabPage = .one
     
     private var position: SecondTitlePosition  = .left
     
@@ -82,8 +83,7 @@ extension TabButton {
     
     private func addSecondTitleLabel() {
         self.secondTitleLabel = UILabel()
-        self.secondTitleLabel?.alpha = 0
-        self.secondTitleLabel?.backgroundColor = .yellow
+        self.secondTitleLabel?.alpha = 1
         guard let secondTitleLabel = self.secondTitleLabel else { return }
         self.addSubview(secondTitleLabel)
         secondTitleLabel.snp.makeConstraints { [weak self] (make) in
@@ -97,6 +97,20 @@ extension TabButton {
         guard let page = self.page else { return }
         self.delegate?.didTapTabButton(for: page)
     }
+}
+
+extension TabButton: PageboyViewControllerDelegate {
+    
+    public func pageboyViewController(_ pageboyViewController: PageboyViewController, didScrollTo position: CGPoint, direction: PageboyViewController.NavigationDirection, animated: Bool) {
+        
+    }
+    
+    public func pageboyViewController(_ pageboyViewController: PageboyViewController, willScrollToPageAt index: Int, direction: PageboyViewController.NavigationDirection, animated: Bool) {
+        
+    }
+}
+
+extension TabButton {
     
     private var margin: CGFloat {
         return 16
